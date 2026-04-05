@@ -1,0 +1,39 @@
+<div class="container mt-5">
+
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold text-success">Patient List</h2>
+
+    <a routerLink="/add-patient" class="btn btn-success px-4 shadow">
+      + Add Patient
+    </a>
+  </div>
+
+  <div class="card border-0 shadow-lg rounded-4 p-4">
+
+    <table class="table table-borderless align-middle">
+      <thead class="custom-header text-center">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Disease</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+
+      <tbody class="text-center">
+        <tr *ngFor="let p of patients" class="table-row">
+          <td>{{p.name}}</td>
+          <td>{{p.age}}</td>
+          <td>
+            <span class="badge bg-warning text-dark px-3 py-2">
+              {{p.disease}}
+            </span>
+          </td>
+          <td>{{p.phone}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+</div>

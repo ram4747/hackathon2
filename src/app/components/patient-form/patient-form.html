@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="card shadow-lg p-4 rounded-4">
+    <h3 class="text-center mb-4 text-primary">Add Patient</h3>
+
+    <form (ngSubmit)="savePatient()">
+      <div class="mb-3">
+        <label>Name</label>
+        <input [(ngModel)]="patient.name" name="name" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label>Age</label>
+        <input [(ngModel)]="patient.age" name="age" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label>Disease</label>
+        <input [(ngModel)]="patient.disease" name="disease" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label>Phone</label>
+        <input [(ngModel)]="patient.phone" name="phone" class="form-control">
+      </div>
+
+      <button class="btn btn-primary w-100">Save</button>
+    </form>
+  </div>
+</div>

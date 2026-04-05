@@ -1,0 +1,28 @@
+/* Header styling */
+.custom-header {
+  background: #1f2937;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Table row hover */
+.table-row {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #eee;
+}
+
+.table-row:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+}
+
+/* Badge styling */
+.badge {
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
