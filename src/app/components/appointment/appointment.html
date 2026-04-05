@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Book Appointment</h2>
+
+  <form (ngSubmit)="bookAppointment()">
+
+    <label>Name</label>
+    <input type="text" [(ngModel)]="name" name="name" required>
+
+    <label>Email</label>
+    <input type="email" [(ngModel)]="email" name="email" required>
+
+    <label>Date</label>
+    <input type="date" [(ngModel)]="date" name="date" required>
+
+    <label>Time</label>
+    <input type="time" [(ngModel)]="time" name="time" required>
+
+    <button type="submit">Book</button>
+
+  </form>
+</div>
