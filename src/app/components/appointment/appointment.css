@@ -1,0 +1,22 @@
+.container{
+    width: 350px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
